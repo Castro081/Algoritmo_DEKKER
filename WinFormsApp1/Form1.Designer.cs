@@ -84,35 +84,46 @@
             // 
             // textBox1
             // 
+            textBox1.BackColor = Color.Black;
+            textBox1.BorderStyle = BorderStyle.None;
+            textBox1.ForeColor = Color.White;
             textBox1.Location = new Point(69, 12);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(290, 23);
+            textBox1.Size = new Size(290, 16);
             textBox1.TabIndex = 3;
             // 
             // textBox2
             // 
+            textBox2.BackColor = Color.Black;
+            textBox2.BorderStyle = BorderStyle.None;
+            textBox2.ForeColor = Color.White;
             textBox2.Location = new Point(69, 79);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(290, 23);
+            textBox2.Size = new Size(290, 16);
             textBox2.TabIndex = 4;
             // 
             // richTextBox1
             // 
-            richTextBox1.Location = new Point(713, 51);
+            richTextBox1.BackColor = Color.Gray;
+            richTextBox1.ForeColor = Color.White;
+            richTextBox1.Location = new Point(704, 51);
             richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(320, 415);
+            richTextBox1.Size = new Size(362, 415);
             richTextBox1.TabIndex = 5;
             richTextBox1.Text = "";
             // 
             // progressBar1
             // 
-            progressBar1.Location = new Point(21, 229);
+            progressBar1.BackColor = Color.Black;
+            progressBar1.Location = new Point(82, 216);
             progressBar1.Name = "progressBar1";
             progressBar1.Size = new Size(225, 23);
             progressBar1.TabIndex = 6;
             // 
             // numericUpDown1
             // 
+            numericUpDown1.BackColor = Color.Black;
+            numericUpDown1.ForeColor = Color.White;
             numericUpDown1.Location = new Point(194, 150);
             numericUpDown1.Name = "numericUpDown1";
             numericUpDown1.Size = new Size(55, 23);
@@ -120,16 +131,19 @@
             // 
             // buttonStart
             // 
+            buttonStart.BackColor = Color.Black;
+            buttonStart.ForeColor = Color.White;
             buttonStart.Location = new Point(16, 294);
             buttonStart.Name = "buttonStart";
             buttonStart.Size = new Size(75, 23);
             buttonStart.TabIndex = 8;
             buttonStart.Text = "Iniciar";
-            buttonStart.UseVisualStyleBackColor = true;
+            buttonStart.UseVisualStyleBackColor = false;
             buttonStart.Click += buttonStart_Click;
             // 
             // trackBarSpeed
             // 
+            trackBarSpeed.BackColor = Color.Black;
             trackBarSpeed.Location = new Point(16, 150);
             trackBarSpeed.Minimum = 1;
             trackBarSpeed.Name = "trackBarSpeed";
@@ -140,16 +154,20 @@
             // 
             // buttonSaveLog
             // 
+            buttonSaveLog.BackColor = Color.Black;
+            buttonSaveLog.ForeColor = Color.White;
             buttonSaveLog.Location = new Point(284, 294);
             buttonSaveLog.Name = "buttonSaveLog";
             buttonSaveLog.Size = new Size(75, 23);
             buttonSaveLog.TabIndex = 11;
             buttonSaveLog.Text = "Guardar";
-            buttonSaveLog.UseVisualStyleBackColor = true;
+            buttonSaveLog.UseVisualStyleBackColor = false;
             buttonSaveLog.Click += buttonSaveLog_Click;
             // 
             // numericUpDownThreads
             // 
+            numericUpDownThreads.BackColor = Color.Black;
+            numericUpDownThreads.ForeColor = Color.White;
             numericUpDownThreads.Location = new Point(303, 150);
             numericUpDownThreads.Name = "numericUpDownThreads";
             numericUpDownThreads.Size = new Size(55, 23);
@@ -166,12 +184,14 @@
             // 
             // buttonClear
             // 
+            buttonClear.BackColor = Color.Black;
+            buttonClear.ForeColor = Color.White;
             buttonClear.Location = new Point(155, 294);
             buttonClear.Name = "buttonClear";
             buttonClear.Size = new Size(75, 23);
             buttonClear.TabIndex = 16;
             buttonClear.Text = "Limpiar";
-            buttonClear.UseVisualStyleBackColor = true;
+            buttonClear.UseVisualStyleBackColor = false;
             buttonClear.Click += buttonClear_Click;
             // 
             // label3
@@ -195,7 +215,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(111, 211);
+            label5.Location = new Point(172, 198);
             label5.Name = "label5";
             label5.Size = new Size(49, 15);
             label5.TabIndex = 19;
@@ -221,6 +241,8 @@
             // 
             // listViewThreads
             // 
+            listViewThreads.BackColor = Color.Gray;
+            listViewThreads.ForeColor = Color.White;
             listViewThreads.Location = new Point(34, 352);
             listViewThreads.Name = "listViewThreads";
             listViewThreads.Size = new Size(339, 114);
@@ -328,17 +350,20 @@
             // 
             // comboBoxVersion
             // 
+            comboBoxVersion.BackColor = Color.Black;
+            comboBoxVersion.ForeColor = Color.White;
             comboBoxVersion.FormattingEnabled = true;
-            comboBoxVersion.Location = new Point(284, 225);
+            comboBoxVersion.Location = new Point(82, 251);
             comboBoxVersion.Name = "comboBoxVersion";
-            comboBoxVersion.Size = new Size(121, 23);
+            comboBoxVersion.Size = new Size(225, 23);
             comboBoxVersion.TabIndex = 34;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1045, 489);
+            BackColor = Color.Black;
+            ClientSize = new Size(1078, 489);
             Controls.Add(comboBoxVersion);
             Controls.Add(label8);
             Controls.Add(labelCriticalSectionCount);
@@ -370,8 +395,9 @@
             Controls.Add(textBox1);
             Controls.Add(label2);
             Controls.Add(label1);
+            ForeColor = SystemColors.ButtonFace;
             Name = "Form1";
-            Text = "Form1";
+            Text = "Algoritmo de Dekker";
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
             ((System.ComponentModel.ISupportInitialize)trackBarSpeed).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDownThreads).EndInit();
